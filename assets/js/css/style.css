@@ -1,0 +1,66 @@
+body {
+  background-color: rgb(29, 60, 60);
+}
+
+
+#myBtn{
+   display: flex;
+   align-items: center;
+   background-color: #dc143c;
+   margin-top: 300px;
+   font-size: 50px;
+  margin-left: 400px;
+   
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    box-shadow: 0 4px 8px 0 rgba(212, 212, 212, 0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    
+  }
+
+  @keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+  }
+  
+ 
+  .modal-content {
+    background-color: #f10909;
+    margin: 20% auto;
+    padding: 45px;
+    border: 2px solid #0c0c0c;
+    width: 80%; 
+   
+  }
+  
+  .modal-content p{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .close {
+    color: #fffcfc;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(238, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
